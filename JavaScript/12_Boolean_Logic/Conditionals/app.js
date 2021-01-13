@@ -1,6 +1,6 @@
-// =====================
-// BASIC IF/ELSE
-// =====================
+=====================
+BASIC IF/ELSE
+=====================
 let random = Math.random();
 if (random < 0.5) {
     console.log("YOUR NUMBER IS LESS THAN 0.5!!!")
@@ -9,9 +9,9 @@ if (random < 0.5) {
 }
 console.log(random);
 
-// =====================
-// PROMPT EXAMPLE
-// =====================
+=====================
+PROMPT EXAMPLE
+=====================
 
 const dayOfWeek = prompt('ENTER A DAY').toLowerCase();
 
@@ -27,14 +27,14 @@ if (dayOfWeek === 'monday') {
 
 
 
-// =====================
-// TICKET PRICE EXAMPLE
-// =====================
+=====================
+TICKET PRICE EXAMPLE
+=====================
 
-// 0-5 - FREE
-// 5 - 10 CHILD $10 
-// 10 - 65 ADULT $20 
-// 65+ SENIOR $10
+0-5 - FREE
+5 - 10 CHILD $10 
+10 - 65 ADULT $20 
+65+ SENIOR $10
 
 const age = 890;
 
@@ -49,9 +49,9 @@ if (age < 5) {
 }
 
 
-// =====================
-// NESTING CONDITIONALS
-// =====================
+=====================
+NESTING CONDITIONALS
+=====================
 
 const password = prompt("please enter a new password");
 
@@ -66,6 +66,37 @@ if (password.length >= 6) {
 } else {
     console.log("PASSWORD TOO SHORT! Must be 6+ characters")
 }
+
+const password = prompt("please enter a new password");
+
+if (password.length >= 6){
+    if(password.indexOf(' ') === -1){
+        console.log("valid Password!");
+    }
+    else {
+        console.log("Password cannot contain spaces!");
+    }
+}
+else {
+    console.log("PASSWORD TOO SHORT! Must be 6+ characters");
+}
+
+
+const password = prompt("Enter a new password");
+
+if (password.length >= 6 && password.indexOf(' ') === -1){
+    console.log("Valid Password!")
+}
+else {
+    console.log("Incorrect format for password!");
+}
+
+const firstName = prompt("enter first name");
+
+if (!firstName){
+    firstName = prompt("Try Again?");
+}
+
 
 
 
