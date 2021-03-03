@@ -5,9 +5,16 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log('COnnection Open!!')
+    console.log('CONNECTION OPEN!!!')
   })
   .catch((err) => {
-    console.log('Ohh noo error!!!')
+    console.log('OH NO ERROR!!!!')
     console.log(err)
   })
+
+const movieSchema = new mongoose.Schema({
+  title: String,
+  year: Number,
+  score: Number,
+  rating: String,
+})
